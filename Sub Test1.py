@@ -9,7 +9,7 @@ print("#นางสาวสิดารัสมิ์ ทั่งทอง 3
 
 print("R1=100 Ohm.")
 print("R2=300 Ohm.")
-print("RT=(R1*R2)/(R1+R2)")
+print RT=(R1*R2)/(R1+R2)
 print("RT=75 Ohm.")
 
 
