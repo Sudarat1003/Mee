@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Admin"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-08-03 03:40:34 PM"/>
+        <attribute name="created" value="QWRtaW47TEFQVE9QLUNLSE1JQUUzOzIwMTktMDgtMDI7MDY6Mzg6MDIgUE07MjgzMg=="/>
+        <attribute name="edited" value="QWRtaW47TEFQVE9QLUNLSE1JQUUzOzIwMTktMDgtMDM7MDM6NDA6MzQgUE07MTE7Mjk4NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="username" type="String" array="False" size=""/>
+            <declare name="password" type="String" array="False" size=""/>
+            <input variable="username"/>
+            <input variable="password"/>
+            <if expression="username == &quot;Mee&quot; and password == &quot;17&quot;">
+                <then>
+                    <output expression="&quot;Welcome to Drink Shop&quot;" newline="True"/>
+                    <output expression="&quot;-----------Menu-----------&quot;" newline="True"/>
+                    <output expression="&quot;1. Coca Cola 15 THB&quot;" newline="True"/>
+                    <output expression="&quot;2. Pepsi 20 THB&quot;" newline="True"/>
+                    <output expression="&quot;3. Milk 10 THB&quot;" newline="True"/>
+                    <output expression="&quot;4. Beer 55 THB&quot;" newline="True"/>
+                    <output expression="&quot;5. Water 10 THB&quot;" newline="True"/>
+                    <output expression="&quot;--------------------------&quot;" newline="True"/>
+                    <declare name="ch" type="Integer" array="False" size=""/>
+                    <output expression="&quot;What do you want :&quot;" newline="True"/>
+                    <input variable="ch"/>
+                    <if expression="ch==1">
+                        <then>
+                            <declare name="price" type="Integer" array="False" size=""/>
+                            <assign variable="price" expression="15"/>
+                            <output expression="&quot;Your order : Coca Cola 15 THB&quot;" newline="True"/>
+                            <output expression="&quot;How many do you need :&quot;" newline="True"/>
+                            <declare name="How" type="Integer" array="False" size=""/>
+                            <declare name="add" type="Integer" array="False" size=""/>
+                            <input variable="How"/>
+                            <assign variable="add" expression="How*price"/>
+                            <output expression="&quot;Total : &quot; &amp; add &amp; &quot; THB &quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="ch==2">
+                                <then>
+                                    <declare name="price" type="Integer" array="False" size=""/>
+                                    <assign variable="price" expression="20"/>
+                                    <output expression="&quot;Your order : Pepsi 20 THB&quot;" newline="True"/>
+                                    <output expression="&quot;How many do you need :&quot;" newline="True"/>
+                                    <declare name="How" type="Integer" array="False" size=""/>
+                                    <declare name="add" type="Integer" array="False" size=""/>
+                                    <input variable="How"/>
+                                    <assign variable="add" expression="How*price"/>
+                                    <output expression="&quot;Total : &quot; &amp; add &amp; &quot; THB &quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="ch==3">
+                                        <then>
+                                            <declare name="price" type="Integer" array="False" size=""/>
+                                            <assign variable="price" expression="10"/>
+                                            <output expression="&quot;Your order : Milk 10 THB&quot;" newline="True"/>
+                                            <output expression="&quot;How many do you need :&quot;" newline="True"/>
+                                            <declare name="How" type="Integer" array="False" size=""/>
+                                            <declare name="add" type="Integer" array="False" size=""/>
+                                            <input variable="How"/>
+                                            <assign variable="add" expression="How*price"/>
+                                            <output expression="&quot;Total : &quot; &amp; add &amp; &quot; THB &quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="ch==4">
+                                                <then>
+                                                    <declare name="price" type="Integer" array="False" size=""/>
+                                                    <assign variable="price" expression="55"/>
+                                                    <output expression="&quot;Your order : Beer 55 THB&quot;" newline="True"/>
+                                                    <output expression="&quot;How many do you need :&quot;" newline="True"/>
+                                                    <declare name="How" type="Integer" array="False" size=""/>
+                                                    <declare name="add" type="Integer" array="False" size=""/>
+                                                    <input variable="How"/>
+                                                    <assign variable="add" expression="How*price"/>
+                                                    <output expression="&quot;Total : &quot; &amp; add &amp; &quot; THB &quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="ch==5">
+                                                        <then>
+                                                            <declare name="price" type="Integer" array="False" size=""/>
+                                                            <assign variable="price" expression="10"/>
+                                                            <output expression="&quot;Your order : Water 10 THB&quot;" newline="True"/>
+                                                            <output expression="&quot;How many do you need :&quot;" newline="True"/>
+                                                            <declare name="How" type="Integer" array="False" size=""/>
+                                                            <declare name="add" type="Integer" array="False" size=""/>
+                                                            <input variable="How"/>
+                                                            <assign variable="add" expression="How*price"/>
+                                                            <output expression="&quot;Total : &quot; &amp; add &amp; &quot; THB &quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <output expression="&quot;You not order&quot;" newline="True"/>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;You not member&quot;" newline="True"/>
+                </else>
+            </if>
+            <output expression="&quot;Thank you&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
