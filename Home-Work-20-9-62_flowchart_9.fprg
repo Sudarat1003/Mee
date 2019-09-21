@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Admin"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-09-21 08:29:25 PM"/>
+        <attribute name="created" value="QWRtaW47TEFQVE9QLUNLSE1JQUUzOzIwMTktMDktMjE7MDg6MTE6NDAgUE07MjgyOQ=="/>
+        <attribute name="edited" value="QWRtaW47TEFQVE9QLUNLSE1JQUUzOzIwMTktMDktMjE7MDg6Mjk6MjUgUE07MjsyOTUw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sum" type="Real" array="False" size=""/>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <declare name="number" type="Integer" array="False" size=""/>
+            <assign variable="sum" expression="0.0"/>
+            <assign variable="n" expression="0"/>
+            <input variable="number"/>
+            <while expression="number &gt; -1">
+                <assign variable="sum" expression="sum + number"/>
+                <assign variable="n" expression="n+1"/>
+                <input variable="number"/>
+            </while>
+            <declare name="avg" type="Real" array="False" size=""/>
+            <assign variable="avg" expression="sum / n"/>
+            <output expression="avg" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
